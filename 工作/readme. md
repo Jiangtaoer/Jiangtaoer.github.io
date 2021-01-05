@@ -19,29 +19,28 @@ UF边缘立方体的U小平面的位置存储在edge [0]中，UR立方体立方�
 该程序使用一些方法来解决多维数据集。但是，由于它具有高度重复性，因此非常适合计算机。（也很容易编写代码！）一次解决一个多维数据集，将未解决的多维数据集限制在越来越少的位置，直到解决整个多维数据集为止。方法如下：
 
 ```
-  因为我= 1到4 {
-    解决DF边缘
-    旋转立方体
+for i = 1 to 4 {
+    solve the DF edge
+    rotate cube
   }
-  因为我= 1到4 {
-    解决DRF难题
-    旋转立方体
+  for i = 1 to 4 {
+    solve the DRF corner
+    rotate cube
   }
-  因为我= 1到4 {
-    解决FR边缘
-    旋转立方体
+  for i = 1 to 4 {
+    solve the FR edge
+    rotate cube
   }
-  对于我= 1至4
-    解决URF角
-    旋转立方体
+  for i = 1 to 4
+    solve the URF corner
+    rotate cube
   }
-  对于我= 1至4
-    解决超滤边缘
-    旋转立方体
+  for i = 1 to 4
+    solve the UF edge
+    rotate cube
   }
 ```
 
-其中*rotate*
 
 ## 编码算法
 
